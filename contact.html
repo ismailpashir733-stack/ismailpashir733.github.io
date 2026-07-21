@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a table online at Royal Taste Restaurant.">
+    <title>Book a Table | Royal Taste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+    
+    </header>
+    <!-- Navigation -->
+<header>
+    <nav>
+        <div class="logo"><h2>Royal<span>Taste</span></h2></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Team</a></li>
+            <li><a href="gallery.html">Our Menu</a></li>
+            <li><a href="contact.html">Book a Table</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <section>
+            <h2>Table Reservation Form</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="4">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" placeholder="e.g. 61xxxxxxx" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">-- How many people? --</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="4">4 People</option>
+                            <option value="large">More than 5 (Event)</option>
+                        </select>
+                    </div>
+
+                    <div class="radio-checkbox-group">
+                        <p><strong>Seating Preference:</strong></p>
+                        <input type="radio" id="indoor" name="seating" value="indoor" required>
+                        <label href="#indoor">Family Section (Indoor)</label>
+                        <input type="radio" id="outdoor" name="seating" value="outdoor">
+                        <label href="#outdoor">Open Air (Outdoor)</label>
+                    </div>
+
+                    <div class="radio-checkbox-group">
+                        <p><strong>Additional Services:</strong></p>
+                        <input type="checkbox" id="birthday" name="addons" value="birthday">
+                        <label href="#birthday">Include Birthday Decoration</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Special Requests/Allergies:</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Any special notes for our chefs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Confirm Booking</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Royal Taste Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
